@@ -40,7 +40,7 @@ const AboutSection = () => {
                 <div>
                   <h5 className="font-bold">Bachelor of Technology in Computer Science</h5>
                   <p className="text-gray-600 dark:text-gray-300">Shri Ramdeobaba college of Engineering and managment, 2023-2027</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Current CGPA: 8.25/10</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Current CGPA: 9.0/10</p>
                 </div>
               </div>
               <div className="flex items-start">
