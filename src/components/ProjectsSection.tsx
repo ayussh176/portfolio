@@ -9,12 +9,12 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Survival Pattern Discovery in Titanic Datase",
-      description: "Performed exploratory data analysis on the Titanic dataset using Pandas and Matplotlib, including data cleaning, feature engineering, and visualizations to uncover key survival trends.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80",
-      tags: ["Python", "Pandas","Matplotlib"],
-      liveLink: "#",
-      githubLink: "https://github.com/ayussh176/Titanic-data-analysis.git"
+      title: "Bangaluru House Price Prediction",
+      description: "A responsive web app that predicts the house prices in Banagaluru using some basic inputs.",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80",
+      tags: ["Regression Model", "Flask", "HTML", "CSS", "JavaScript"],
+      liveLink: "https://house-price-qcwb.onrender.com/",
+      githubLink: "https://github.com/ayussh176/house-price-prediction"
     },
     {
       id: 2,
@@ -27,21 +27,21 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
+      title: "Survival Pattern Discovery in Titanic Datase",
+      description: "Performed exploratory data analysis on the Titanic dataset using Pandas and Matplotlib, including data cleaning, feature engineering, and visualizations to uncover key survival trends.",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80",
+      tags: ["Python", "Pandas","Matplotlib"],
+      liveLink: "#",
+      githubLink: "https://github.com/ayussh176/Titanic-data-analysis.git"
+    },
+    {
+      id: 4,
       title: "Expense Tracker App",
       description: "A mobile-responsive web app to track personal expenses with visualization and categorization features.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80",
       tags: ["JavaScript", "Chart.js", "Bootstrap", "Firebase"],
-      liveLink: "#",
+      liveLink: "https://expense-tracker176.netlify.app/",
       githubLink: "https://github.com/ayussh176/Expense_tracker.git"
-    },
-    {
-      id: 4,
-      title: "Weather Forecast Dashboard",
-      description: "A weather application that provides current and forecasted weather data using external APIs.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80",
-      tags: ["HTML/CSS", "JavaScript", "API Integration"],
-      liveLink: "#",
-      githubLink: "https://github.com/ayussh176/weather.git"
     }
   ];
 
