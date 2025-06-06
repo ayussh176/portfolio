@@ -31,7 +31,7 @@ const AllProjects = () => {
       description: "A web application for hostpials especially doctor where they can keep the data of patients and which get store in the data base",
       image: "doctor.jpg",
       tags: ["React", "Node.js", "Firebase", "versal"],
-      liveLink: "https://patientkhata.netlify.app/login",
+      liveLink: "https://patientkhata.netlify.app/",
       githubLink: "https://github.com/ayussh176/clinic-data-center.git"
     },
     {
