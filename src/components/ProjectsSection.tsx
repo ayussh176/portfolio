@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       id: 1,
       title: "Bangaluru House Price Prediction",
       description: "A responsive web app that predicts the house prices in Banagaluru using some basic inputs.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80",
+      image: "house.png",
       tags: ["Regression Model", "Flask", "HTML", "CSS", "JavaScript"],
       liveLink: "https://house-price-qcwb.onrender.com/",
       githubLink: "https://github.com/ayussh176/house-price-prediction"
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
       id: 4,
       title: "Expense Tracker App",
       description: "A mobile-responsive web app to track personal expenses with visualization and categorization features.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80",
+      image: "expense.avif",
       tags: ["JavaScript", "Chart.js", "Bootstrap", "Firebase"],
       liveLink: "https://expense-tracker176.netlify.app/",
       githubLink: "https://github.com/ayussh176/Expense_tracker.git"
