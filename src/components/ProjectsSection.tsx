@@ -36,12 +36,12 @@ const ProjectsSection = () => {
     },
     {
       id: 4,
-      title: "Expense Tracker App",
-      description: "A mobile-responsive web app to track personal expenses with visualization and categorization features.",
-      image: "expense.avif",
-      tags: ["JavaScript", "Chart.js", "Bootstrap", "Firebase"],
-      liveLink: "https://expense-tracker176.netlify.app/",
-      githubLink: "https://github.com/ayussh176/Expense_tracker.git"
+      title: "ProductivityHub - Todo List Application",
+      description: "A simple and intuitive application to manage daily tasks with features like adding, editing, and deleting tasks. it also include adding notes and Planner. with secure login and signup.",
+      image: "to do list.jpeg",
+      tags: ["HTML/CSS", "JavaScript", "React.js", "Firebase"],
+      liveLink: "https://to-do-list176.netlify.app/",
+      githubLink: "https://github.com/ayussh176/To-do-list.git"
     }
   ];
 
