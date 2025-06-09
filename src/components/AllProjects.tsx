@@ -49,7 +49,7 @@ const AllProjects = () => {
       description: "A responsive web app to track personal expenses with visualization and categorization features.",
       image: "expense.avif",
       tags: ["JavaScript", "Chart.js", "HTML/CSS", "React.js"],
-      liveLink: "https://expense-tracker176.netlify.app/",
+      liveLink: "https://expense-tracker-176.netlify.app/",
       githubLink: "https://github.com/ayussh176/Expense_tracker.git"
     },
     {
