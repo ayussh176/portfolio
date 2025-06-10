@@ -30,7 +30,7 @@ const AllProjects = () => {
       title: "PatientKhata",
       description: "A web application for hostpials especially doctor where they can keep the data of patients and which get store in the data base",
       image: "doctor.jpg",
-      tags: ["React", "Node.js", "Firebase", "versal"],
+      tags: ["React", "Node.js", "Firebase", "netlify"],
       liveLink: "https://patientkhata.netlify.app/",
       githubLink: "https://github.com/ayussh176/clinic-data-center.git"
     },
