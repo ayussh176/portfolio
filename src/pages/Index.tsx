@@ -19,9 +19,6 @@ const Index = () => {
       <SkillsSection />
       <ProjectsSection />
       <ContactSection />
-      
-      {/* Uncomment the line below to include AllProjects section */}
-      {/* <AllProjects /> */}  {/* REMOVE this */}
       <Footer />
     </div>
   );

@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -31,9 +30,7 @@ const Footer = () => {
                 className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 transition-colors">
                 <Mail size={20} />
               </a>
-
             </div>
-            
           </div>
         </div>
         
@@ -41,6 +38,7 @@ const Footer = () => {
           <nav className="flex justify-center flex-wrap gap-x-8 gap-y-4">
             <a href="#home" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 transition-colors">Home</a>
             <a href="#about" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 transition-colors">About</a>
+            <a href="#coding-platforms" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 transition-colors">Coding Platforms</a>
             <a href="#skills" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 transition-colors">Skills</a>
             <a href="#projects" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 transition-colors">Projects</a>
             <a href="#contact" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 transition-colors">Contact</a>

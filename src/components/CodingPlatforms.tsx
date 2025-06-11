@@ -22,6 +22,7 @@ const CodingPlatforms = () => {
   return (
     <section id="coding-platforms" className="py-16 bg-background text-center">
       <h2 className="text-3xl font-bold text-purple-600 mb-10">Coding Platforms</h2>
+      <div className="h-1 w-20 bg-purple-600 mx-auto mb-6"></div>
       <div className="container mx-auto px-4 flex flex-wrap justify-center gap-8">
 
         {platforms.map((platform) => (
