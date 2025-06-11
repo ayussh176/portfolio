@@ -11,14 +11,13 @@ const SkillsSection = () => {
   
   const webTechnologies = [
     { name: "React", level: 85 },
-    { name: "Node.js", level: 75 },
     { name: "HTML/CSS", level: 90 },
-    { name: "Express.js", level: 70 },
+    { name: "Javascript", level: 70 },
   ];
   const otherSkills = [
     "Git & GitHub","SQL", "Data Structures", 
     "Algorithms", "Problem Solving", "Agile Methodology","Data Science","Data Analytics",
-    "Linux", "Machine Learning Basics", "AWS Basics","flask"
+    "Linux", "Machine Learning Basics","Deep Learning","flask"
   ];
 
   return (

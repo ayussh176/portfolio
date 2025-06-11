@@ -42,18 +42,21 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <Button 
-                className="bg-purple-600 hover:bg-purple-700 text-white"
-                onClick={scrollToProjects}
-              >
-                Explore Projects <ArrowRight size={16} className="ml-2" />
-              </Button>
-              <Button 
-                className="bg-purple-600 hover:bg-purple-700 text-white"
-                onClick={scrollToContact}
-              >
-                Contact Me <ArrowRight size={16} className="ml-2" />
-              </Button>
+            <div className="flex flex-wrap gap-4">
+                <Button 
+                  className="bg-purple-600 hover:bg-purple-700 text-white"
+                  onClick={scrollToProjects}
+                >
+                  Explore Projects <ArrowRight size={16} className="ml-2" />
+                </Button>
+
+                <Button 
+                  className="bg-purple-600 hover:bg-purple-700 text-white"
+                  onClick={scrollToContact}
+                >
+                  Contact Me <ArrowRight size={16} className="ml-2" />
+                </Button>
+              </div>
               
               <div className="flex items-center gap-4 mt-4 md:mt-0 md:ml-4">
                 <a href="https://github.com/ayussh176" target="_blank" rel="noopener noreferrer" 
@@ -67,6 +70,8 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
+
+          
           <div className="md:w-2/5 mt-12 md:mt-0 flex justify-center animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 bg-purple-600 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
