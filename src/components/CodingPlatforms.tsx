@@ -2,11 +2,7 @@ import { Trophy } from "lucide-react";
 
 const CodingPlatforms = () => {
   const platforms = [
-    {
-      name: "LeetCode",
-      link: "https://leetcode.com/u/ayush_176/",
-      stats: ["120+ Problems Solved"],
-    },
+    
     {
       name: "CodeChef",
       link: "https://www.codechef.com/users/ayush_176",
@@ -17,6 +13,12 @@ const CodingPlatforms = () => {
       link: "https://www.hackerrank.com/profile/ayushmalik852",
       stats: ["4 Badges", "Level: Silver"],
     },
+    {
+      name: "LeetCode",
+      link: "https://leetcode.com/u/ayush_176/",
+      stats: ["120+ Problems Solved"],
+    },
+    
   ];
 
   return (
