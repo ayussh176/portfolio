@@ -67,7 +67,7 @@ const AllProjects = () => {
       description: "A weather application that provides current and forecasted weather data using external APIs.",
       image: "istockphoto-477110708-612x612.jpg",
       tags: ["HTML/CSS", "JavaScript", "API Integration"],
-      liveLink: "#",
+      liveLink: "https://weather176.netlify.app/",
       githubLink: "https://github.com/ayussh176/weather.git"
     }    
   ];
