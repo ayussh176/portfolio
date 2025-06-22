@@ -69,7 +69,16 @@ const AllProjects = () => {
       tags: ["HTML/CSS", "JavaScript", "API Integration"],
       liveLink: "https://weather176.netlify.app/",
       githubLink: "https://github.com/ayussh176/weather.git"
-    }    
+    },
+    {
+      id: 7,
+      title: "Kissan Khata",
+      description: "A role-based Pesticide Management Web App for distributors and company staff to manage products, sales, collections, and schemes. Built with React, Firebase, and Excel/PDF export features for streamlined data handling.",
+      image: "agriculture-7177221_1280.jpg",
+      tags: ["typescript", "react", "Firebase","Database Schema"],
+      liveLink: "https://kissankhata.netlify.app/",
+      githubLink: "https://github.com/ayussh176/KissanKhata.git"
+    }
   ];
 
   return (

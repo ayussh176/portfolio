@@ -66,7 +66,6 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <a href="#" className="text-xl font-mono font-bold text-primary">
           <span className="text-primary">Ayush Malik</span>
-          <span className="text-purple-500"> | CSE</span>
         </a>
 
         {/* Desktop Navigation */}

@@ -27,21 +27,21 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: "Survival Pattern Discovery in Titanic Datase",
-      description: "Performed exploratory data analysis on the Titanic dataset using Pandas and Matplotlib, including data cleaning, feature engineering, and visualizations to uncover key survival trends.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80",
-      tags: ["Python", "Pandas","Matplotlib"],
-      liveLink: "#",
-      githubLink: "https://github.com/ayussh176/Titanic-data-analysis.git"
-    },
-    {
-      id: 4,
       title: "ProductivityHub - Todo List Application",
       description: "A simple and intuitive application to manage daily tasks with features like adding, editing, and deleting tasks. it also include adding notes and Planner. with secure login and signup.",
       image: "to do list.jpeg",
       tags: ["HTML/CSS", "JavaScript", "React.js", "Firebase"],
       liveLink: "https://to-do-list176.netlify.app/",
       githubLink: "https://github.com/ayussh176/To-do-list.git"
+    },
+    {
+      id: 4,
+      title: "Kissan Khata",
+      description: "A role-based Pesticide Management Web App for distributors and company staff to manage products, sales, collections, and schemes. Built with React, Firebase, and Excel/PDF export features for streamlined data handling.",
+      image: "agriculture-7177221_1280.jpg",
+      tags: ["typescript", "react", "Firebase","Database Schema"],
+      liveLink: "https://kissankhata.netlify.app/",
+      githubLink: "https://github.com/ayussh176/KissanKhata.git"
     }
   ];
 
