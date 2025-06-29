@@ -18,7 +18,7 @@ This is my personal developer portfolio built to showcase my **projects**, **ski
 
 ## 🚀 Tech Stack
 
-- **Frontend**: React.js, Tailwind CSS, Framer Motion
+- **Frontend**: React.js, Tailwind CSS
 - **Deployment**: Netlify
 
 ---
