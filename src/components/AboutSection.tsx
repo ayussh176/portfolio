@@ -54,14 +54,14 @@ const AboutSection = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="mr-4 mt-1">
+                {/* <div className="mr-4 mt-1">
                   <BookOpen className="text-purple-600" size={24} />
                 </div>
                 <div>
                   <h5 className="font-bold">Senior Secondary Education</h5>
                   <p className="text-gray-600 dark:text-gray-300">St. Lawrence High School, 2020-2021</p>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Percentage: 87.80%</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
