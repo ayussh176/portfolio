@@ -32,7 +32,7 @@ const AllProjects = () => {
       image: "doctor.jpg",
       tags: ["React", "Node.js", "Firebase", "netlify"],
       liveLink: "https://patientkhata.netlify.app/",
-      githubLink: "https://github.com/ayussh176/clinic-data-center.git"
+      githubLink: "https://github.com/ayussh176/PatientKhata.git"
     },
     {
       id: 3,
