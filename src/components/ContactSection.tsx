@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
-import emailjs from "emailjs-com"; // ✅ EmailJS
+import emailjs from "emailjs-com";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -24,18 +24,16 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    // ✅ Send email via EmailJS
     emailjs.send(
-      "service_uzwphbq",        // your service ID
-      "template_8bjdfhp",       // your template ID
+      "service_uzwphbq",        
+      "template_8bjdfhp",       
       {
         from_name: formData.name,
         from_email: formData.email,
         subject: formData.subject,
         message: formData.message,
       },
-      "pyfl-syYnRBSs06NL"       // your public key
+      "pyfl-syYnRBSs06NL"       
     )
     .then(() => {
       toast({
