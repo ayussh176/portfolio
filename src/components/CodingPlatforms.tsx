@@ -16,7 +16,7 @@ const CodingPlatforms = () => {
     {
       name: "LeetCode",
       link: "https://leetcode.com/u/ayush_176/",
-      stats: ["150+ Problems Solved"],
+      stats: ["170+ Problems Solved"],
     },
     
   ];
