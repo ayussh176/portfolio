@@ -6,7 +6,7 @@ const CodingPlatforms = () => {
     {
       name: "CodeChef",
       link: "https://www.codechef.com/users/ayush_176",
-      stats: ["Rating: 0 Star", "2 Contests","problem solver: bronze badge"],
+      stats: ["Rating: 1 Star", "3 Contests","problem solver: bronze badge"],
     },
     {
       name: "HackerRank",
@@ -16,7 +16,7 @@ const CodingPlatforms = () => {
     {
       name: "LeetCode",
       link: "https://leetcode.com/u/ayush_176/",
-      stats: ["170+ Problems Solved"],
+      stats: ["210+ Problems Solved"],
     },
     
   ];
