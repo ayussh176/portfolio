@@ -4,34 +4,20 @@ import { Card, CardContent } from "@/components/ui/card";
 const experiences = [
   {
     id: 1,
-    role: "Frontend Developer Intern",
-    company: "TechNova Solutions",
+    role: "Software Developer Intern",
+    company: "ParkBy pvt ltd",
     location: "Remote",
     type: "Internship",
-    startDate: "Jun 2024",
-    endDate: "Sep 2024",
+    startDate: "Aug 2025",
+    endDate: "oct 2025",
     description: [
-      "Built responsive UI components using React, TypeScript, and Tailwind CSS.",
-      "Collaborated with designers to implement pixel-perfect layouts and animations.",
-      "Improved page performance and accessibility across major browsers."
+      "Developed a parking slot booking web application using the MERN stack, integrating AI-based safety features.",
+      "Built and maintained the backend in Django, ensuring scalability and efficient data handling.",
+      "Worked as a Project Manager, managed the agile working of the website on JIRA"
     ],
-    techStack: ["React", "TypeScript", "Tailwind CSS", "Git"]
+    techStack: ["React", "TypeScript", "Django", "Git","MySQL"]
   },
-  {
-    id: 2,
-    role: "Full Stack Developer",
-    company: "CodeCraft Labs",
-    location: "Nagpur, India",
-    type: "Part-time",
-    startDate: "Jan 2023",
-    endDate: "Dec 2023",
-    description: [
-      "Developed REST APIs for a retail management system using Node.js and Express.",
-      "Integrated PostgreSQL/MongoDB databases and wrote optimized queries.",
-      "Implemented authentication and role-based access for admin and customers."
-    ],
-    techStack: ["Node.js", "Express", "PostgreSQL", "MongoDB", "JWT"]
-  }
+  
 ];
 
 const Experience = () => {
