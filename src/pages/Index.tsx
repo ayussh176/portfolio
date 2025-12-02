@@ -8,6 +8,7 @@ import CodingPlatforms from "@/components/CodingPlatforms";
 // import AllProjects from "@/components/AllProjects";  // REMOVE this import
 
 import Footer from "@/components/Footer";
+import Experience  from "@/components/Experience";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <AboutSection />
+      <Experience/>
       <CodingPlatforms />
       <SkillsSection />
       <ProjectsSection />
