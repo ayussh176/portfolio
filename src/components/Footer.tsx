@@ -28,9 +28,10 @@ const Footer = () => {
               {[
                 { href: "#home", label: "Home" },
                 { href: "#about", label: "About" },
+                { href: "#experience", label: "Experience" },
+                { href: "#coding-platforms", label: "Coding Platforms" },
                 { href: "#skills", label: "Skills" },
                 { href: "#projects", label: "Projects" },
-                { href: "#coding-platforms", label: "Coding Platforms" },
                 { href: "#contact", label: "Contact" },
               ].map((link) => (
                 <li key={link.href}>
@@ -67,12 +68,6 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="tel:+919359444688"
-                  className="text-muted-foreground hover:text-purple-400 transition-colors duration-300 text-sm hover:translate-x-1 transform inline-block"
-                >
-                  Call Me
-                </a>
               </li>
             </ul>
           </div>
