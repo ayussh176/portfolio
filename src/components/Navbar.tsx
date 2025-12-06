@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Download } from 'lucide-react';
 
-const sections = ["home", "about", "coding-platforms", "skills", "projects", "contact"];
+const sections = ["home", "about","experience","coding-platforms", "skills", "projects", "contact"];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
