@@ -9,7 +9,7 @@ const experiences = [
     location: "Remote",
     type: "Internship",
     startDate: "Aug 2025",
-    endDate: "oct 2025",
+    endDate: "Nov 2025",
     certificate: "https://ibb.co/SXxfK9Jm",
     description: [
       "Developed a parking slot booking web application using the MERN stack, integrating AI-based safety features.",
