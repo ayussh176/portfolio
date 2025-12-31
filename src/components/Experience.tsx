@@ -5,7 +5,7 @@ const experiences = [
   {
     id: 1,
     role: "Software Developer Intern",
-    company: "ParkBy pvt ltd",
+    company: "ParkBy Technologies pvt ltd",
     location: "Remote",
     type: "Internship",
     startDate: "Aug 2025",
@@ -16,7 +16,7 @@ const experiences = [
       "Built and maintained the backend in Django, ensuring scalability and efficient data handling.",
       "Worked as a Project Manager, managed the agile working of the website on JIRA"
     ],
-    techStack: ["React", "TypeScript", "Django", "Git", "MySQL"]
+    techStack: ["React", "TypeScript", "Django", "Git", "MySQL","JIRA"]
   }
 ];
 

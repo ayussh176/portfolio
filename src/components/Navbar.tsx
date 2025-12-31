@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = "/Ayush Resume.pdf";
+    link.href = "/Resume_AyushMalik.pdf";
     link.download = "Ayush_malik_Resume.pdf";
     document.body.appendChild(link);
     link.click();

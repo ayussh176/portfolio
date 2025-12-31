@@ -16,8 +16,8 @@ const SkillsSection = () => {
   ];
   const otherSkills = [
     "Git & GitHub","SQL", "Data Structures", 
-    "Algorithms", "Problem Solving", "Agile Methodology","Data Science","Data Analytics",
-    "Linux", "Machine Learning Basics","Deep Learning","flask"
+    "Algorithms", "Problem Solving", "Agile Methodology","Data Science",
+    "Linux", "Machine Learning Basics","Deep Learning","flask","Leadership","Communication"
   ];
 
   return (
