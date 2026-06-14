@@ -17,6 +17,20 @@ const experiences = [
       "Worked as a Project Manager, managed the agile working of the website on JIRA"
     ],
     techStack: ["React", "TypeScript", "Django", "Git", "MySQL","JIRA"]
+  },
+  {
+    id: 2,
+    role: "Joint Secretary",
+    company: "NSS RBU Unit",
+    location: "Nagpur",
+    type: "Volunteer",
+    startDate: "2025",
+    endDate: "2026",
+    description: [
+      "Organized and managed a unit of 250 volunteers for the various social service initiatives, camps, and awareness drives.",
+      "Effectively coordinated with student volunteers and university administration to execute community outreach programs."
+    ],
+    techStack: ["Leadership", "Event Management", "Team Coordination", "Public Speaking"]
   }
 ];
 

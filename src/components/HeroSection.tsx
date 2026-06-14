@@ -27,7 +27,7 @@ const HeroSection = () => {
           <div className="md:w-3/5 animate-fade-in">
             <div className="mb-6">
               <div className="inline-block px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-300 rounded-full text-sm font-medium mb-4">
-                B.Tech CSE Student • 3rd Year
+                B.Tech CSE Student • 4th Year
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-mono">
                 Hi, I'm <span className="text-purple-600">Ayush Malik</span>

@@ -25,7 +25,7 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     emailjs.send(
-      "service_hvw0wtg",        
+      "service_kbs25zp",        
       "template_8bjdfhp",       
       {
         from_name: formData.name,
