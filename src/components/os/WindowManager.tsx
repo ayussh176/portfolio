@@ -27,6 +27,7 @@ interface WindowManagerContextType {
   setIsRecruiterMode: React.Dispatch<React.SetStateAction<boolean>>;
   recruiterAnimationActive: boolean;
   triggerRecruiterMode: () => void;
+  exitRecruiterMode: () => void;
   arrangeWindowsForRecruiter: () => void;
 }
 
@@ -75,6 +76,22 @@ export function WindowManagerProvider({ children }: { children: React.ReactNode 
     return { x: centerX, y: centerY };
   }, []);
 
+  const createWindowState = useCallback((id: string, existingCount: number): WindowState | null => {
+    const config = WINDOW_CONFIGS[id];
+    if (!config) return null;
+    zCounter.current += 1;
+    return {
+      id,
+      title: config.title,
+      accent: config.accent,
+      isMinimized: false,
+      isMaximized: false,
+      zIndex: zCounter.current,
+      position: getDefaultPosition(existingCount),
+      size: { width: 680, height: 0 },
+    };
+  }, [getDefaultPosition]);
+
   const openWindow = useCallback((id: string, triggerRecruiter = true) => {
     if (id === 'why_hire_me.md' && triggerRecruiter && !isRecruiterMode && !recruiterAnimationActive) {
       triggerRecruiterModeRef.current();
@@ -88,18 +105,10 @@ export function WindowManagerProvider({ children }: { children: React.ReactNode 
           w.id === id ? { ...w, isMinimized: false, zIndex: zCounter.current } : w
         );
       }
-      const config = WINDOW_CONFIGS[id];
-      if (!config) return prev;
-      zCounter.current += 1;
-      const pos = getDefaultPosition(prev.filter(w => !w.isMinimized).length);
-      return [...prev, {
-        id, title: config.title, accent: config.accent,
-        isMinimized: false, isMaximized: false,
-        zIndex: zCounter.current, position: pos,
-        size: { width: 680, height: 0 },
-      }];
+      const nextWindow = createWindowState(id, prev.filter(w => !w.isMinimized).length);
+      return nextWindow ? [...prev, nextWindow] : prev;
     });
-  }, [getDefaultPosition, isRecruiterMode, recruiterAnimationActive]);
+  }, [createWindowState, isRecruiterMode, recruiterAnimationActive]);
 
   const arrangeWindowsForRecruiter = useCallback(() => {
     const W = typeof window !== 'undefined' ? window.innerWidth : 1000;
@@ -161,6 +170,14 @@ export function WindowManagerProvider({ children }: { children: React.ReactNode 
     }, 3200);
   }, [isRecruiterMode, recruiterAnimationActive, arrangeWindowsForRecruiter]);
 
+  const exitRecruiterMode = useCallback(() => {
+    setRecruiterAnimationActive(false);
+    setIsRecruiterMode(false);
+    zCounter.current = 100;
+    const introWindow = createWindowState('intro.sh', 0);
+    setWindows(introWindow ? [introWindow] : []);
+  }, [createWindowState]);
+
   useEffect(() => {
     triggerRecruiterModeRef.current = triggerRecruiterMode;
   }, [triggerRecruiterMode]);
@@ -193,7 +210,7 @@ export function WindowManagerProvider({ children }: { children: React.ReactNode 
       windows, openWindow, closeWindow, minimizeWindow, maximizeWindow,
       focusWindow, isWindowOpen, registerIconPosition,
       isRecruiterMode, setIsRecruiterMode, recruiterAnimationActive,
-      triggerRecruiterMode, arrangeWindowsForRecruiter,
+      triggerRecruiterMode, exitRecruiterMode, arrangeWindowsForRecruiter,
     }}>
       {children}
     </WindowManagerContext.Provider>

@@ -160,8 +160,8 @@ function RecruiterModeOverlay() {
 function Desktop() {
   const {
     windows, openWindow, closeWindow,
-    isRecruiterMode, setIsRecruiterMode,
-    recruiterAnimationActive, triggerRecruiterMode
+    isRecruiterMode,
+    recruiterAnimationActive, triggerRecruiterMode, exitRecruiterMode
   } = useWindowManager();
 
   const [wallpaperIndex, setWallpaperIndex] = useState(() =>
@@ -343,7 +343,7 @@ function Desktop() {
               </button>
             </div>
             <button 
-              onClick={() => setIsRecruiterMode(false)} 
+              onClick={exitRecruiterMode}
               className="cta-dock-close"
               title="Exit Recruiter Mode"
             >

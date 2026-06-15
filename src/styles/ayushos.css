@@ -276,7 +276,11 @@ body.ayushos #root {
   border-radius: 8px;
   cursor: grab;
   border: 1px solid transparent;
-  transition: background 0.15s ease, border-color 0.15s ease, filter 0.15s ease;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+    filter 0.2s ease;
   background: transparent;
   font-family: inherit;
   pointer-events: auto;
@@ -286,6 +290,8 @@ body.ayushos #root {
 
 .os-icon:hover {
   background: rgba(255, 255, 255, 0.05);
+  transform: scale(1.05) translateY(-2px);
+  filter: drop-shadow(0 0 10px color-mix(in srgb, currentColor 70%, transparent));
 }
 
 .os-icon.selected {

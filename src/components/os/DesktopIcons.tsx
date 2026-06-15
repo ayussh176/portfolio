@@ -147,7 +147,7 @@ function IconButton({ id, emoji, label, accent, pos, onPositionChange }: IconBut
       className={`os-icon ${isCert ? 'certificates-crt-icon' : ''} ${isPDF ? 'resume-pdf-icon' : ''} ${isMD ? 'why-hire-me-icon' : ''} ${isWindowOpen(id) ? 'selected' : ''}`}
       onMouseDown={handleMouseDown}
       onTouchStart={handleTouchStart}
-      style={{ left: pos.x, top: pos.y }}
+      style={{ left: pos.x, top: pos.y, color: accent }}
     >
       {isCert ? (
         <div className="linux-cert-icon-container">
