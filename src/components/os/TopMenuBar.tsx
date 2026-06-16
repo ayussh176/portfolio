@@ -452,11 +452,6 @@ function SystemDropdown({
     <div style={dropdownStyle}>
       <div style={sectionHeader}>Preferences</div>
       <MenuItem
-        icon={iconBox('#1a1040', '#AFA9EC', '◑')}
-        label={`Theme: ${isDark ? 'Dark' : 'Light'}`}
-        onClick={() => { toggleTheme(); onClose(); }}
-      />
-      <MenuItem
         icon={iconBox('#0a1f1a', '#5DCAA5', '🖼')}
         label="Change Wallpaper"
         onClick={() => { cycleWallpaper(); onClose(); }}
