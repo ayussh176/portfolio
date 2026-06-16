@@ -150,7 +150,7 @@ export default function ContextMenu() {
       />
       <Divider />
       <Item
-        label="🚀 antigravity.sh"
+        label="🚀 hidden_egg.sh"
         icon=""
         color="#F0997B"
         onClick={() => { runAntigravity(); close(); }}

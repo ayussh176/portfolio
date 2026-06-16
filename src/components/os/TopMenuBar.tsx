@@ -164,9 +164,9 @@ function AboutAyushOSModal({ onClose }: { onClose: () => void }) {
         <div style={{ padding: 20, fontSize: 10, color: '#e6edf3', lineHeight: 1.8 }}>
           <div style={{ fontFamily: 'inherit', fontSize: 10, color: '#e6edf3', whiteSpace: 'pre' }}>
             {[
-              ['        AK           ', 'AyushOS v1.0', '', ''],
+              ['        AM           ', 'AyushOS v1.0', '', ''],
               ['       /  \\          ───────────────────', '', '', ''],
-              ['      / AK \\         ', 'OS:', '       AyushOS Linux x86_64', ''],
+              ['      / AM \\         ', 'OS:', '       AyushOS Linux x86_64', ''],
               ['     /______\\        ', 'Host:', '     Portfolio Website', ''],
               ['                     ', 'Kernel:', '   vanilla-js 5.0.0', ''],
               ['  ┌──────────┐       ', 'Shell:', '    bash 5.1.0', ''],
@@ -221,7 +221,7 @@ function KeyboardShortcutsModal({ onClose }: { onClose: () => void }) {
     ['Ctrl+Shift+C', 'Open contact.sh'],
     ['Escape', 'Close top window'],
     ['Right-click desktop', 'Context menu'],
-    ['type antigravity', '🚀 easter egg'],
+    ['type hidden_egg', '🚀 hidden egg'],
     ['type matrix', '🌈 easter egg'],
   ];
 
@@ -297,8 +297,8 @@ function CommandPalette() {
       windows.forEach(w => closeWindow(w.id));
       showToast('[OK] All windows closed', '#5DCAA5');
     } else if (cmd === 'help') {
-      showToast('Commands: intro, about, skills, experience, projects, cp, contact, resume, closeall, antigravity, matrix', '#AFA9EC');
-    } else if (cmd === 'antigravity') {
+      showToast('Commands: intro, about, skills, experience, projects, cp, contact, resume, closeall, hidden_egg, matrix', '#AFA9EC');
+    } else if (cmd === 'antigravity' || cmd === 'hidden_egg' || cmd === 'hidden') {
       runAntigravity();
     } else if (cmd === 'matrix') {
       runMatrixRain();
@@ -487,7 +487,7 @@ function SystemDropdown({
       <div style={sectionHeader}>Easter Eggs 🥚</div>
       <MenuItem
         icon={iconBox('#1a0d05', '#F0997B', '🚀')}
-        label="antigravity.sh"
+        label="hidden_egg.sh"
         labelColor="#F0997B"
         onClick={() => { runAntigravity(); onClose(); }}
       />

@@ -6,7 +6,7 @@ import { useOSMenu } from '../os/OSMenuSystem';
 const ALL_COMMANDS = [
   'whoami','ls','cat','skills','git','leetcode','neofetch','hire','help','clear',
   'pwd','echo','date','uptime','projects','contact','about','experience',
-  'antigravity','matrix','analytics','sudo','recruiter',
+  'hidden_egg','hidden','matrix','analytics','sudo','recruiter',
 ];
 
 const STARTUP_LINES = [
@@ -171,9 +171,9 @@ export default function TerminalWindow() {
     }
     else if (lower === 'neofetch') {
       out.push(
-        `<pre style="font-family:'JetBrains Mono',monospace;font-size:10px;line-height:1.5;margin:0">        AK              ${hl('AyushOS v1.0', '#7F77DD;font-weight:700')}
+        `<pre style="font-family:'JetBrains Mono',monospace;font-size:10px;line-height:1.5;margin:0">        AM              ${hl('AyushOS v1.0', '#7F77DD;font-weight:700')}
        /  \\             ${hl('─────────────────────', '#30363d')}
-      / AK \\            ${hl('OS:', '#5DCAA5')} AyushOS Linux x86_64
+      / AM \\            ${hl('OS:', '#5DCAA5')} AyushOS Linux x86_64
      /______\\           ${hl('Host:', '#5DCAA5')} Portfolio Website
                         ${hl('Kernel:', '#5DCAA5')} vanilla-js 5.0.0
   ┌──────────┐          ${hl('Shell:', '#5DCAA5')} bash 5.1.0
@@ -241,7 +241,7 @@ export default function TerminalWindow() {
         ['projects',                     'Open projects/'],
         ['recruiter',                    '💼 Activate hidden Recruiter Mode'],
         ['clear',                        'Clear terminal output'],
-        ['antigravity',                  '🚀 Disable gravity protocol'],
+        ['hidden_egg',                   '🚀 Disable gravity protocol (hidden egg)'],
         ['matrix',                       '🌈 Initiate matrix rain'],
         ['analytics',                    'Session window open stats'],
         ['sudo hire',                    'Escalate hire request to root'],
@@ -251,7 +251,7 @@ export default function TerminalWindow() {
         out.push(`  ${hl(c.padEnd(36), '#5DCAA5')}${hl(d, '#6e7681')}`);
       });
     }
-    else if (lower === 'antigravity') {
+    else if (lower === 'antigravity' || lower === 'hidden_egg' || lower === 'hidden') {
       out.push(hl('[OK] Disabling gravity protocol...', '#F0997B'));
       setTimeout(() => runAntigravity(), 400);
     }

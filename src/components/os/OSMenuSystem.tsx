@@ -215,7 +215,7 @@ export function OSMenuProvider({
   const runAntigravity = useCallback(() => {
     setActiveDropdown(null);
     showToast(
-      '🚀 antigravity.sh — gravity disabled<br/>Press ESC or wait 6s to restore',
+      '🚀 hidden_egg.sh — gravity disabled<br/>Press ESC or wait 6s to restore',
       '#F0997B'
     );
 
@@ -223,7 +223,7 @@ export function OSMenuProvider({
     const termOutput = document.querySelector('.terminal') as HTMLElement;
     if (termOutput) {
       const lines = [
-        '[system@AyushOS] $ ./antigravity.sh',
+        '[system@AyushOS] $ ./hidden_egg.sh',
         '[INFO] Locating gravity module...',
         '[OK]   Gravity module disabled. Stand by.',
         '[WARN] All desktop objects are now weightless.',

@@ -318,7 +318,7 @@ export default function ResumeWindow() {
                 <span>📍 Nagpur, Maharashtra</span>
                 <span>📧 ayushmalik852@gmail.com</span>
                 <span>📞 +91 91724 16301</span>
-                <span>🌐 ayussh176.github.io</span>
+                <span>🌐 ayush-portfolio176.netlify.app</span>
                 <span>🔗 github.com/ayussh176</span>
               </div>
             </div>
