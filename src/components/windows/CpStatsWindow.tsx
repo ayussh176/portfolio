@@ -51,39 +51,46 @@ export default function CpStatsWindow() {
   const [barsAnimated, setBarsAnimated] = useState(false);
   const [calendarData, setCalendarData] = useState<{date: string, count: number, level: number}[]>([]);
   const animated = useRef(false);
+  const platformsRef = useRef(platformsData);
+
+  useEffect(() => {
+    platformsRef.current = platformsData;
+  }, [platformsData]);
 
   useEffect(() => {
     const fetchLeetCodeData = async () => {
       try {
-        const [solvedRes, calendarRes] = await Promise.all([
-          fetch('https://alfa-leetcode-api.onrender.com/ayush_176/solved'),
-          fetch('https://alfa-leetcode-api.onrender.com/ayush_176/calendar')
-        ]);
+        const response = await fetch('https://leetcode-api-faisalshohag.vercel.app/ayush_176');
+        const data = await response.json();
         
-        const solved = await solvedRes.json();
-        const calendar = await calendarRes.json();
+        const totalSolved = data.totalSolved;
+        const easySolved = data.easySolved;
+        const mediumSolved = data.mediumSolved;
+        const hardSolved = data.hardSolved;
         
-        if (solved && solved.solvedProblem) {
+        if (typeof totalSolved === 'number') {
           setPlatformsData(prev => {
             const next = [...prev];
             next[0] = {
               ...next[0],
-              mainStat: solved.solvedProblem,
+              mainStat: totalSolved,
               suffix: '',
-              substats: [`Easy: ${solved.easySolved}`, `Medium: ${solved.mediumSolved}`, `Hard: ${solved.hardSolved}`]
+              substats: [`Easy: ${easySolved || 0}`, `Medium: ${mediumSolved || 0}`, `Hard: ${hardSolved || 0}`]
             };
             return next;
           });
           
           setDifficultyData([
-            { label: 'Easy', count: solved.easySolved, max: solved.solvedProblem, color: 'var(--teal)' },
-            { label: 'Medium', count: solved.mediumSolved, max: solved.solvedProblem, color: 'var(--amber)' },
-            { label: 'Hard', count: solved.hardSolved, max: solved.solvedProblem, color: 'var(--coral)' },
+            { label: 'Easy', count: easySolved || 0, max: totalSolved, color: 'var(--teal)' },
+            { label: 'Medium', count: mediumSolved || 0, max: totalSolved, color: 'var(--amber)' },
+            { label: 'Hard', count: hardSolved || 0, max: totalSolved, color: 'var(--coral)' },
           ]);
         }
         
-        if (calendar && calendar.submissionCalendar) {
-          const calObj = JSON.parse(calendar.submissionCalendar);
+        if (data && data.submissionCalendar) {
+          const calObj = typeof data.submissionCalendar === 'string'
+            ? JSON.parse(data.submissionCalendar)
+            : data.submissionCalendar;
           const dataMap = new Map();
           
           for (const [timestamp, count] of Object.entries(calObj)) {
@@ -132,7 +139,7 @@ export default function CpStatsWindow() {
       const progress = Math.min(elapsed / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
 
-      setCounters(platformsData.map(p => Math.floor(p.mainStat * eased)));
+      setCounters(platformsRef.current.map(p => Math.floor(p.mainStat * eased)));
 
       if (progress < 1) requestAnimationFrame(tick);
     };
